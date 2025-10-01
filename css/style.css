@@ -1,0 +1,193 @@
+
+body {
+  background-color: rgb(10, 43, 50);
+  color: rgb(230, 153, 0);
+  font-family: "Kirang Haerang", system-ui;
+  font-weight: 400;
+  font-style: normal; 
+}
+
+H1{
+    font-size: 95px;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.masthead {
+  display: flex;
+  justify-content: space-between;  /* logo on left, text on right */
+  align-items: center;             /* <-- this aligns logo and text vertically */
+  font-size: 25px;
+  gap: 2em;
+  padding: 10px 20px;
+  border-bottom: solid;
+  
+}
+
+.masthead-logo img{
+height: 100px;
+width: auto;
+display: block; /* optional, prevents inline spacing issues */
+}
+
+
+.masthead-text a {
+  color: rgb(230, 153, 0);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  gap: 2em;
+}
+
+.masthead-text a:hover {
+  color: #dd7c21;
+}
+
+ .masthead span:hover {
+    color: #dd7c21;
+  }
+
+
+
+h2{
+    font-size: 25px;
+}
+
+.intro{
+h1{
+    font-size: 100px;
+    justify-content: center;
+    text-align: center;
+    font-family: "Kirang Haerang", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+h2{
+  font-size: 100px;
+  justify-content: center;
+  text-align: center;
+  font-family: "Kirang Haerang", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 0.3;
+} 
+}
+
+.intro img{
+  height: 800px;
+  width: auto;
+  display: block; 
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20em;
+}
+
+
+.block-div, .block {
+  display: block;
+  border-radius: 1em;
+  color: rgb(175, 14, 9);
+  background-color: #ffe6a8;
+  border: 1px;
+  padding: 1em;
+  width: 60%;          
+  margin: 0 auto;    
+  max-width: 700px;
+  h1{
+     font-size: 80px;
+    justify-content: center;
+    text-align: center;
+    font-family: "Kirang Haerang", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+h2{
+    font-size: 45px;
+    justify-content: center;
+    text-align: center;
+    font-family: "Kirang Haerang", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 0.5;
+}
+  }
+
+  .footer img{
+  height: 100px;
+  width: auto;
+  display: block; 
+  margin-left: auto;
+  margin-right: auto;
+
+  }
+
+.intro-continued h1 {
+  font-size: 80px;
+  justify-content: center;
+  text-align: center;
+  font-family: "Kirang Haerang", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 0.25em;
+}
+
+.intro-text-box p {
+  font-size: 20px;
+  justify-content: center;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.4;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+
+#content {
+    display: grid;
+    grid-template-columns: 2fr .75fr;
+    gap: 2em;
+    margin-bottom: 1em;
+  }
+
+.Recipe{
+  h1{
+    font-size: 80px;
+    justify-content: left;
+    text-align:left;
+    font-family: "Kirang Haerang", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 1em;  
+    margin-bottom: 0.25em;
+    margin-top: 3.5em;
+  } 
+  .prep-text-box {
+  color: rgb(230, 153, 0);
+  padding: 1em;
+  border-radius: 1em;
+  max-width: 600px;      
+  margin-left: 4em;         
+  }
+
+  .prep-text-box p {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 0;              /* Remove excessive spacing */
+  text-align: left;
+  }
+
+  .prep-image{
+
+  height:auto;
+  width: 300px;
+  display: block; 
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20em;
+
+  }
+}
