@@ -19,7 +19,7 @@ H1{
   justify-content: space-between;  /* logo on left, text on right */
   align-items: center;             /* <-- this aligns logo and text vertically */
   font-size: 25px;
-  gap: 2em;
+  gap: 3em;
   padding: 10px 20px;
   border-bottom: solid;
   
@@ -29,6 +29,11 @@ H1{
 height: 100px;
 width: auto;
 display: block; /* optional, prevents inline spacing issues */
+}
+
+.masthead-text {
+  display: flex;
+  gap: 2em;
 }
 
 
@@ -85,7 +90,7 @@ h2{
 
 .block-div, .block {
   display: block;
-  border-radius: 1em;
+  border-radius: 0;
   color: rgb(175, 14, 9);
   background-color: #ffe6a8;
   border: 1px;
@@ -93,6 +98,10 @@ h2{
   width: 60%;          
   margin: 0 auto;    
   max-width: 700px;
+  background-image: url(../assets/beige-paper.png);
+  max-height:max-content;
+
+  
   h1{
      font-size: 80px;
     justify-content: center;
@@ -104,9 +113,11 @@ h2{
 h2{
     font-size: 45px;
     justify-content: center;
-    text-align: center;
+    text-align: left;
     font-family: "Kirang Haerang", system-ui;
     font-weight: 400;
+    margin-left: 1em;
+    margin-right: 1em;
     font-style: normal;
     line-height: 0.5;
 }
@@ -144,15 +155,104 @@ h2{
   max-width: 900px;
 }
 
+.grid-parent {
+  display: grid;
+  /*grid-template-columns: 25% 75%;*/
+  grid-template-columns: 2fr 2fr;
+  gap: 2em;
+  margin-bottom: 1em;
+}
 
-#content {
-    display: grid;
-    grid-template-columns: 2fr .75fr;
-    gap: 2em;
-    margin-bottom: 1em;
-  }
+.grid-child {
+  padding: 2em;
+  min-height: 30vh;
+  color: var(--background-color);
+  margin-bottom: 3em;
+  margin-top: 2em;
+}
 
-.Recipe{
+.grid-child p{
+  font-size: 18px;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.4;
+  margin: 0 auto;
+  margin-left: 2em;
+  max-width: 400px;
+}
+
+.grid-layout-parent {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 2fr 2fr;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+
+.sticky {
+  position: sticky;
+  top: 2rem;
+
+  width: 200px;
+  max-height: 300px;
+  overflow-y: auto;
+
+  margin-left: auto;
+  margin-right: 2em;
+  margin-bottom: 1em;
+
+  display: block;
+  border-radius: 0;
+  color: rgb(175, 14, 9);
+  background-color: #ffe6a8;
+  background-image: url(../assets/beige-paper.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  padding: 1em;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+
+  
+  h1{
+    font-size: 30px;
+    justify-content: center;
+    text-align: center;
+    font-family: "Kirang Haerang", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+h2{
+    font-size: 15px;
+    justify-content: center;
+    text-align: left;
+    font-family: "Kirang Haerang", system-ui;
+    font-weight: 400;
+    margin-left: 1em;
+    margin-right: 1em;
+    font-style: normal;
+    line-height: 0.5;
+}
+
+
+
+.Prep{
+  h1{
+    font-size: 80px;
+    justify-content: left;
+    text-align:left;
+    font-family: "Kirang Haerang", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 1em;  
+    margin-bottom: 0;
+    margin-top: 3.5em;
+  } 
+}
+
+.Cook{
   h1{
     font-size: 80px;
     justify-content: left;
@@ -164,30 +264,37 @@ h2{
     margin-bottom: 0.25em;
     margin-top: 3.5em;
   } 
-  .prep-text-box {
-  color: rgb(230, 153, 0);
-  padding: 1em;
-  border-radius: 1em;
-  max-width: 600px;      
-  margin-left: 4em;         
-  }
-
-  .prep-text-box p {
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 20px;
-  line-height: 1.5;
-  margin: 0;              /* Remove excessive spacing */
-  text-align: left;
-  }
-
-  .prep-image{
-
-  height:auto;
-  width: 300px;
-  display: block; 
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20em;
-
-  }
 }
+
+.Assemble{
+  h1{
+    font-size: 80px;
+    justify-content: left;
+    text-align:left;
+    font-family: "Kirang Haerang", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 1em;  
+    margin-bottom: 0.25em;
+    margin-top: 3.5em;
+  } 
+}
+
+.Ready{
+  h1{
+    font-size: 80px;
+    justify-content: center;
+    text-align:center;
+    font-family: "Kirang Haerang", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 1em;  
+    margin-bottom: 0.25em;
+    margin-top: 3.5em;
+  } 
+}
+
+
+
+
+
