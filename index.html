@@ -29,7 +29,7 @@
 <div class="intro" id="intro">
     <h1> How to: </h1>
     <h2> Make a Rice Bowl</h2>
-   <img src="assets/ricebowl.svg">
+   <img src="assets/Artboard 1.svg">
 </div>
 
 
@@ -46,13 +46,9 @@
         <h2>-Kewpie Mayo</h2>
         <h2>-Sriracha</h2>
         <h2>-Soy sauce</h2>
-        <h2>-Everything Bagel Seasoning</h2>
-  
-     
-      
+        <h2>-Everything Bagel Seasoning</h2>     
 </div>
-
-<div class="sticky">
+  <div class="sticky">
   <div class="post">
     <h1>Ingredients</h1>
     <h2>-Rice </h2>
@@ -64,11 +60,12 @@
     <h2>-Kewpie Mayo</h2>
     <h2>-Sriracha</h2>
     <h2>-Soy sauce</h2>
-    <h2>-Everything Bagel Seasoning</h2>
-  
+    <h2>-Everything Bagel Seasoning</h2>    
   </div>
+    </div>
+     <div class="sentinel"></div>
 </div>
-
+  
 
   <section class="Prep">
     <h1>Prep</h1>
@@ -77,7 +74,7 @@
         <p>Dice your scallion. Dice 2 half-inch slices of Spam around 1/2. Slice 1/2 Avocado. Set scallion and avocado aside for later assembling.</p>
       </div>
       <div class="grid-child">
-        <img src="assets/Prep.svg" alt="Prep Step Image" />
+        <img src="assets/NEWPREP.svg" alt="Prep Step Image" />
       </div>
     </div>
   </section>
@@ -89,7 +86,7 @@
         <p>Set your stove to medium-high. Once heated, butter your pan and add in your Spam. Let Spam simmer for about 3 minutes. Add in your egg. I like sunny side up, but you should cook it to your liking. Cook both egg and Spam until the egg is done. The Spam should have slightly orange-red fry markings.</p>
       </div>
       <div class="grid-child">
-        <img src="assets/Cook.svg" alt="Cooking Step Image" />
+        <img src="assets/NEWCOOK.svg" alt="Cooking Step Image" />
       </div>
     </div>
   </section>
@@ -101,20 +98,48 @@
         <p>As you let your Spam and egg cool, heat your instant rice for 1 minute and 30 seconds. Once ready, lay your rice in a bowl. First, place your avocado half and cooked Spam on top of your rice. Then, lay your egg overtop, and place a little kimchi on the side of the egg. Finally, drizzle kewpie mayo, sriracha, and soy sauce over top and sprinkle your scallion and everything bagel seasoning. Congrats, your rice bowl is ready to enjoy!</p>
       </div>
       <div class="grid-child">
-        <img src="assets/CORRECTASSEMBLE.svg" alt="Assembly Step Image" />
+        <img src="assets/ASSEMBLE3.svg" alt="Assembly Step Image" />
       </div>
     </div>
   </section>
 
   <div class="Ready" id="ready">
     <h1>Ready!</h1>
-    <img src="assets/ready.svg">
+    <img src="assets/fixedready.svg">
   </div>
 
 
   <div class="footer">
-    <img src="assets/koreanlogo.svg" alt="footer logo" />
+    <span><a href="#masthead"><img src="assets/koreanlogo.svg" alt="logo"></a></span> </div>
+    
   </div>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const sticky = document.querySelector('.sticky');
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            sticky.classList.add('visible');
+          } else {
+            sticky.classList.remove('visible');
+          }
+        });
+      },
+      {
+        root: null, // viewport
+        threshold: 0.1 // trigger when at least 10% is visible
+      }
+    );
+
+    observer.observe(sticky);
+  });
+</script>
+
+
+
+  
 
 </body>
 </html>

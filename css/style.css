@@ -1,10 +1,14 @@
 
+html{
+  scroll-behavior: smooth;
+}
 body {
   background-color: rgb(10, 43, 50);
   color: rgb(230, 153, 0);
   font-family: "Kirang Haerang", system-ui;
   font-weight: 400;
-  font-style: normal; 
+  font-style: normal;
+  margin:0; 
 }
 
 h1{
@@ -16,19 +20,18 @@ h1{
 
 .masthead {
   display: flex;
-  justify-content: space-between;  /* logo on left, text on right */
-  align-items: center;             /* <-- this aligns logo and text vertically */
+  justify-content: space-between; 
+  align-items: center;          
   font-size: 25px;
   gap: 3em;
   padding: 10px 20px;
   border-bottom: solid;
-  
 }
 
 .masthead-logo img{
 height: 100px;
 width: auto;
-display: block; /* optional, prevents inline spacing issues */
+display: block; 
 }
 
 .masthead-text {
@@ -51,8 +54,6 @@ display: block; /* optional, prevents inline spacing issues */
  .masthead span:hover {
     color: #dd7c21;
   }
-
-
 
 h2{
     font-size: 25px;
@@ -84,7 +85,7 @@ h2{
   display: block; 
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20em;
+  margin-bottom: 15em;
 }
 
 
@@ -95,10 +96,12 @@ h2{
   background-color: #ffe6a8;
   border: 1px;
   padding: 1em;
+  margin-bottom: 0;
+  padding-bottom: 0;
   width: 60%;          
   margin: 0 auto;    
-  height: 900px;
-  max-width: 700px;
+  height: 850px;
+  max-width: 650px;
   background-image: url(../assets/beige-paper.png);
 
 
@@ -154,6 +157,7 @@ h2{
   line-height: 1.4;
   margin: 0 auto;
   max-width: 900px;
+  margin-bottom: 7em;
 }
 
 .intro-text-box img{
@@ -166,61 +170,64 @@ h2{
 }
 .grid-parent {
   display: grid;
-  grid-template-columns: 2fr 1fr;   /* two equal columns */
+  grid-template-columns: 3fr 1fr;   
   gap: 2em;
-  max-width: 1000px;                /* limits total width */
-  margin-left: 0;                  /* centers the whole grid on the page */
-  margin-right: auto;            /* aligns items vertically */
+  max-width: 1000px;               
+  margin-left:0;                  
+  margin-right: auto;            
 }
 
 
 .grid-child {
   padding: 2em;
-  min-height: 30vh;
+  min-height: 20vh;
   color: var(--background-color);
   margin: 0;
+  width: 100%;
+  max-width: none;
 }
 
 .grid-child p{
-  font-size: 18px;
+  font-size: 21px;
   font-family: "Josefin Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   line-height: 1.4;
   margin: 0 auto;
-  margin-left: 2em;
-  max-width: 500px;
+  margin-left: 2.5em;
+  max-width: none;
 }
 
 .grid-child img {
   display: block;
-  margin: 1em auto;
-  width: 500px;
-  height: auto;
-  padding-right: 2em;
+  margin: 0em;
+  max-width: none;
+  height: 400px;
+  padding-right: auto;
 }
 
 .grid-layout-parent {
   display: grid;
-  grid-template-columns: 2fr 2fr;
-  grid-template-rows: 2fr 2fr;
-  gap: 1em;
+  grid-template-columns: 3fr 2fr;
+  gap: 2em;
   margin-bottom: 1em;
+}
+
+.sticky-container{
+  position:relative;
+  height: 100%;
 }
 
 .sticky {
   position: sticky;
   top: 1rem;
-
   width: 200px;
   max-height: 400px;
   overflow-y: auto;
-
   margin-left: auto;
   margin-right: 2em;
-  margin-bottom: 1em;
-
+  margin-bottom: 0;
   display: block;
   border-radius: 0;
   color: rgb(175, 14, 9);
@@ -228,10 +235,18 @@ h2{
   background-image: url(../assets/beige-paper.png);
   background-size: cover;
   background-repeat: no-repeat;
-
   padding: 1em;
   box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  transition:  opacity 0.5s ease-out;
 }
+
+.sticky.visible {
+  opacity: 1;
+}
+
+
 
   
   h1{
@@ -266,7 +281,7 @@ h2{
     font-style: normal;
     margin-left: 1em;  
     margin-bottom: 0;
-    margin-top: 3.5em;
+    margin-top: 1.5em;
   } 
 }
 
@@ -300,6 +315,7 @@ h2{
 
 .Ready{
   h1{
+    margin-top: 3em;
     font-size: 80px;
     justify-content: center;
     text-align:center;
@@ -317,7 +333,7 @@ h2{
   display: block; 
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20em;
+  margin-bottom: 5em;
 }
 
 
